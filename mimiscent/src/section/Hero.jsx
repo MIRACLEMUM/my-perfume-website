@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 const images = [
   '/hero-perfume-removebg-preview.png',
-  '/hero-perfume3.png',
-  '/hero-perfume-removebg-preview.png',
+  '/perfume8-removebg-preview.png',
+  '/perfume1-removebg-preview.png',
  '/hero-perfume-removebg-preview.png',
 
 

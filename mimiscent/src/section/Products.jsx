@@ -9,34 +9,34 @@ const Products = () => {
       {
         title: "Ocean Breeze",
         desc: "Fresh and long-lasting fragrance.",
-        image: "/perfume1.png",
+        image: "/menperf.webp",
       },
       {
         title: "Golden Touch",
         desc: "Luxury scent with a golden finish.",
-        image: "/perfume2.png",
+        image: "/menperfume4.jpg",
       },
       {
         title: "Midnight Musk",
         desc: "Bold and mysterious night fragrance.",
-        image: "/perfume3.png",
+        image: "/menperfume.webp",
       },
     ],
     women: [
       {
         title: "Rose Elixir",
         desc: "Elegant and romantic floral scent.",
-        image: "/perfume4.png",
+        image: "/perfume8.png",
       },
       {
         title: "Velvet Bloom",
         desc: "Soft and graceful with a hint of jasmine.",
-        image: "/perfume5.png",
+        image: "/womenper.webp",
       },
       {
         title: "Amber Kiss",
         desc: "Warm, rich and feminine.",
-        image: "/perfume6.png",
+        image: "/womanp.webp",
       },
     ],
   };
@@ -85,7 +85,7 @@ const Products = () => {
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
                 category === "women" && !viewAll
                   ? "bg-[#FFD700] text-black"
-                  : "text-[#FFD700]"
+                  : "text-[black]"
               }`}
             >
               Women
