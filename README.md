@@ -1,2 +1,0 @@
-# my-perfume-website
-project
