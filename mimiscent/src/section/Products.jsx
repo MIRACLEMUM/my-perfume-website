@@ -7,38 +7,48 @@ const Products = () => {
   const products = {
     men: [
       {
-        title: "Ocean Breeze",
+        title: "9 PM PERFUME",
         desc: "Fresh and long-lasting fragrance.",
         image: "/menperf.webp",
+        price: 45000,
       },
       {
-        title: "Golden Touch",
+        title: "BAD & BOUJEE",
         desc: "Luxury scent with a golden finish.",
         image: "/menperfume4.jpg",
+        price: 52000,
       },
       {
-        title: "Midnight Musk",
-        desc: "Bold and mysterious night fragrance.",
+        title: "OUD AL LAYL",
+        desc: "Bold and mysterious fragrance.",
         image: "/menperfume.webp",
+        price: 60000,
       },
     ],
     women: [
       {
-        title: "Rose Elixir",
+        title: "MY WAY",
         desc: "Elegant and romantic floral scent.",
         image: "/perfume8.png",
+        price: 5000,
       },
       {
         title: "Velvet Bloom",
         desc: "Soft and graceful with a hint of jasmine.",
         image: "/womenper.webp",
+        price: 55000,
       },
       {
-        title: "Amber Kiss",
+        title: "ECLAIRE",
         desc: "Warm, rich and feminine.",
         image: "/womanp.webp",
+        price: 62000,
       },
     ],
+  };
+
+  const formatPrice = (price) => {
+    return `₦${price.toLocaleString()}`;
   };
 
   const displayedProducts = viewAll
@@ -58,7 +68,8 @@ const Products = () => {
               Latest Products
             </h2>
             <p className="text-sm md:text-base font-body text-gray-600 max-w-md">
-              Discover our luxury collection of men and women perfumes crafted for elegance and distinction.
+              Discover our luxury collection of men and women perfumes crafted
+              for elegance and distinction.
             </p>
           </div>
 
@@ -85,7 +96,7 @@ const Products = () => {
               className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
                 category === "women" && !viewAll
                   ? "bg-[#FFD700] text-black"
-                  : "text-[black]"
+                  : "text-black"
               }`}
             >
               Women
@@ -109,8 +120,11 @@ const Products = () => {
                 <h3 className="text-lg font-heading font-bold mb-1">
                   {product.title}
                 </h3>
-                <p className="text-sm font-body text-gray-600 mb-4">
+                <p className="text-sm font-body text-gray-600 mb-2">
                   {product.desc}
+                </p>
+                <p className="text-base font-bold text-[#010020] mb-4">
+                  {formatPrice(product.price)}
                 </p>
                 <a
                   href="https://wa.me/2347064400428"
@@ -125,7 +139,7 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Explore All Button (Right-aligned) */}
+        {/* Explore All Button */}
         {!viewAll && (
           <div className="mt-12 flex justify-end">
             <button

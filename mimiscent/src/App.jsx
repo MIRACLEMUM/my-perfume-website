@@ -3,6 +3,11 @@ import { ThemeContext } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Hero from './section/Hero'
 import Products from './section/Products'
+import SpecialProduct from './section/SpecialProduct';
+import PopularProduct from './section/PopularProduct';
+
+
+
 
 function App() {
   const { theme } = useContext(ThemeContext)
@@ -12,6 +17,10 @@ function App() {
       <Navbar />
       <Hero />
       <Products />
+      <SpecialProduct />
+      <PopularProduct />
+
+
     </div>
   )
 }
